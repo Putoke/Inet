@@ -1,0 +1,191 @@
+No.     Time           Source                Destination           Protocol Length Info
+      1 0.000000000    127.0.0.1             127.0.0.1             TCP      74     54411 > dtspcd [SYN] Seq=0 Win=43690 Len=0 MSS=65495 SACK_PERM=1 TSval=10048147 TSecr=0 WS=128
+
+Frame 1: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1 (127.0.0.1), Dst: 127.0.0.1 (127.0.0.1)
+Transmission Control Protocol, Src Port: 54411 (54411), Dst Port: dtspcd (6112), Seq: 0, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      2 0.000018000    127.0.0.1             127.0.0.1             TCP      74     dtspcd > 54411 [SYN, ACK] Seq=0 Ack=1 Win=43690 Len=0 MSS=65495 SACK_PERM=1 TSval=10048147 TSecr=10048147 WS=128
+
+Frame 2: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1 (127.0.0.1), Dst: 127.0.0.1 (127.0.0.1)
+Transmission Control Protocol, Src Port: dtspcd (6112), Dst Port: 54411 (54411), Seq: 0, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      3 0.000028000    127.0.0.1             127.0.0.1             TCP      66     54411 > dtspcd [ACK] Seq=1 Ack=1 Win=43776 Len=0 TSval=10048147 TSecr=10048147
+
+Frame 3: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1 (127.0.0.1), Dst: 127.0.0.1 (127.0.0.1)
+Transmission Control Protocol, Src Port: 54411 (54411), Dst Port: dtspcd (6112), Seq: 1, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      4 0.002638000    127.0.0.1             127.0.0.1             TCP      87     dtspcd > 54411 [PSH, ACK] Seq=1 Ack=1 Win=43776 Len=21 TSval=10048148 TSecr=10048147
+
+Frame 4: 87 bytes on wire (696 bits), 87 bytes captured (696 bits) on interface 0
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1 (127.0.0.1), Dst: 127.0.0.1 (127.0.0.1)
+Transmission Control Protocol, Src Port: dtspcd (6112), Dst Port: 54411 (54411), Seq: 1, Ack: 1, Len: 21
+Data (21 bytes)
+
+0000  57 65 6c 63 6f 6d 65 20 74 6f 20 66 69 73 6b 63   Welcome to fiskc
+0010  68 61 74 21 0a                                    hat!.
+    Data: 57656c636f6d6520746f206669736b63686174210a
+    [Length: 21]
+
+No.     Time           Source                Destination           Protocol Length Info
+      5 0.002661000    127.0.0.1             127.0.0.1             TCP      66     54411 > dtspcd [ACK] Seq=1 Ack=22 Win=43776 Len=0 TSval=10048148 TSecr=10048148
+
+Frame 5: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1 (127.0.0.1), Dst: 127.0.0.1 (127.0.0.1)
+Transmission Control Protocol, Src Port: 54411 (54411), Dst Port: dtspcd (6112), Seq: 1, Ack: 22, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      6 1.671353000    ::1                   ::1                   TCP      94     54740 > dtspcd [SYN] Seq=0 Win=43690 Len=0 MSS=65476 SACK_PERM=1 TSval=10048565 TSecr=0 WS=128
+
+Frame 6: 94 bytes on wire (752 bits), 94 bytes captured (752 bits) on interface 0
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 6, Src: ::1 (::1), Dst: ::1 (::1)
+Transmission Control Protocol, Src Port: 54740 (54740), Dst Port: dtspcd (6112), Seq: 0, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      7 1.671363000    ::1                   ::1                   TCP      94     dtspcd > 54740 [SYN, ACK] Seq=0 Ack=1 Win=43690 Len=0 MSS=65476 SACK_PERM=1 TSval=10048565 TSecr=10048565 WS=128
+
+Frame 7: 94 bytes on wire (752 bits), 94 bytes captured (752 bits) on interface 0
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 6, Src: ::1 (::1), Dst: ::1 (::1)
+Transmission Control Protocol, Src Port: dtspcd (6112), Dst Port: 54740 (54740), Seq: 0, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      8 1.671372000    ::1                   ::1                   TCP      86     54740 > dtspcd [ACK] Seq=1 Ack=1 Win=43776 Len=0 TSval=10048565 TSecr=10048565
+
+Frame 8: 86 bytes on wire (688 bits), 86 bytes captured (688 bits) on interface 0
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 6, Src: ::1 (::1), Dst: ::1 (::1)
+Transmission Control Protocol, Src Port: 54740 (54740), Dst Port: dtspcd (6112), Seq: 1, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      9 1.671763000    ::1                   ::1                   TCP      107    dtspcd > 54740 [PSH, ACK] Seq=1 Ack=1 Win=43776 Len=21 TSval=10048565 TSecr=10048565
+
+Frame 9: 107 bytes on wire (856 bits), 107 bytes captured (856 bits) on interface 0
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 6, Src: ::1 (::1), Dst: ::1 (::1)
+Transmission Control Protocol, Src Port: dtspcd (6112), Dst Port: 54740 (54740), Seq: 1, Ack: 1, Len: 21
+Data (21 bytes)
+
+0000  57 65 6c 63 6f 6d 65 20 74 6f 20 66 69 73 6b 63   Welcome to fiskc
+0010  68 61 74 21 0a                                    hat!.
+    Data: 57656c636f6d6520746f206669736b63686174210a
+    [Length: 21]
+
+No.     Time           Source                Destination           Protocol Length Info
+     10 1.671784000    ::1                   ::1                   TCP      86     54740 > dtspcd [ACK] Seq=1 Ack=22 Win=43776 Len=0 TSval=10048565 TSecr=10048565
+
+Frame 10: 86 bytes on wire (688 bits), 86 bytes captured (688 bits) on interface 0
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 6, Src: ::1 (::1), Dst: ::1 (::1)
+Transmission Control Protocol, Src Port: 54740 (54740), Dst Port: dtspcd (6112), Seq: 1, Ack: 22, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     11 4.123689000    127.0.0.1             127.0.0.1             UDP      43     Source port: 54853  Destination port: 54853
+
+Frame 11: 43 bytes on wire (344 bits), 43 bytes captured (344 bits) on interface 0
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1 (127.0.0.1), Dst: 127.0.0.1 (127.0.0.1)
+User Datagram Protocol, Src Port: 54853 (54853), Dst Port: 54853 (54853)
+Data (1 byte)
+
+0000  00                                                .
+    Data: 00
+    [Length: 1]
+
+No.     Time           Source                Destination           Protocol Length Info
+     12 10.801385000   127.0.0.1             127.0.0.1             TCP      70     54411 > dtspcd [PSH, ACK] Seq=1 Ack=22 Win=43776 Len=4 TSval=10050847 TSecr=10048148
+
+Frame 12: 70 bytes on wire (560 bits), 70 bytes captured (560 bits) on interface 0
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1 (127.0.0.1), Dst: 127.0.0.1 (127.0.0.1)
+Transmission Control Protocol, Src Port: 54411 (54411), Dst Port: dtspcd (6112), Seq: 1, Ack: 22, Len: 4
+Data (4 bytes)
+
+0000  48 65 6a 0a                                       Hej.
+    Data: 48656a0a
+    [Length: 4]
+
+No.     Time           Source                Destination           Protocol Length Info
+     13 10.801428000   127.0.0.1             127.0.0.1             TCP      66     dtspcd > 54411 [ACK] Seq=22 Ack=5 Win=43776 Len=0 TSval=10050847 TSecr=10050847
+
+Frame 13: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1 (127.0.0.1), Dst: 127.0.0.1 (127.0.0.1)
+Transmission Control Protocol, Src Port: dtspcd (6112), Dst Port: 54411 (54411), Seq: 22, Ack: 5, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     14 10.801977000   ::1                   ::1                   TCP      109    dtspcd > 54740 [PSH, ACK] Seq=22 Ack=1 Win=43776 Len=23 TSval=10050848 TSecr=10048565
+
+Frame 14: 109 bytes on wire (872 bits), 109 bytes captured (872 bits) on interface 0
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 6, Src: ::1 (::1), Dst: ::1 (::1)
+Transmission Control Protocol, Src Port: dtspcd (6112), Dst Port: 54740 (54740), Seq: 22, Ack: 1, Len: 23
+Data (23 bytes)
+
+0000  5b 2f 31 32 37 2e 30 2e 30 2e 31 3a 35 34 34 31   [/127.0.0.1:5441
+0010  31 5d 20 48 65 6a 0a                              1] Hej.
+    Data: 5b2f3132372e302e302e313a35343431315d2048656a0a
+    [Length: 23]
+
+No.     Time           Source                Destination           Protocol Length Info
+     15 10.802020000   ::1                   ::1                   TCP      86     54740 > dtspcd [ACK] Seq=1 Ack=45 Win=43776 Len=0 TSval=10050848 TSecr=10050848
+
+Frame 15: 86 bytes on wire (688 bits), 86 bytes captured (688 bits) on interface 0
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 6, Src: ::1 (::1), Dst: ::1 (::1)
+Transmission Control Protocol, Src Port: 54740 (54740), Dst Port: dtspcd (6112), Seq: 1, Ack: 45, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     16 14.071765000   ::1                   ::1                   TCP      97     54740 > dtspcd [PSH, ACK] Seq=1 Ack=45 Win=43776 Len=11 TSval=10051665 TSecr=10050848
+
+Frame 16: 97 bytes on wire (776 bits), 97 bytes captured (776 bits) on interface 0
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 6, Src: ::1 (::1), Dst: ::1 (::1)
+Transmission Control Protocol, Src Port: 54740 (54740), Dst Port: dtspcd (6112), Seq: 1, Ack: 45, Len: 11
+Data (11 bytes)
+
+0000  44 75 20 c3 a4 72 20 66 75 6c 0a                  Du ..r ful.
+    Data: 447520c3a4722066756c0a
+    [Length: 11]
+
+No.     Time           Source                Destination           Protocol Length Info
+     17 14.071795000   ::1                   ::1                   TCP      86     dtspcd > 54740 [ACK] Seq=45 Ack=12 Win=43776 Len=0 TSval=10051665 TSecr=10051665
+
+Frame 17: 86 bytes on wire (688 bits), 86 bytes captured (688 bits) on interface 0
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 6, Src: ::1 (::1), Dst: ::1 (::1)
+Transmission Control Protocol, Src Port: dtspcd (6112), Dst Port: 54740 (54740), Seq: 45, Ack: 12, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     18 14.071963000   127.0.0.1             127.0.0.1             TCP      102    dtspcd > 54411 [PSH, ACK] Seq=22 Ack=5 Win=43776 Len=36 TSval=10051665 TSecr=10050847
+
+Frame 18: 102 bytes on wire (816 bits), 102 bytes captured (816 bits) on interface 0
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1 (127.0.0.1), Dst: 127.0.0.1 (127.0.0.1)
+Transmission Control Protocol, Src Port: dtspcd (6112), Dst Port: 54411 (54411), Seq: 22, Ack: 5, Len: 36
+Data (36 bytes)
+
+0000  5b 2f 30 3a 30 3a 30 3a 30 3a 30 3a 30 3a 30 3a   [/0:0:0:0:0:0:0:
+0010  31 3a 35 34 37 34 30 5d 20 44 75 20 c3 a4 72 20   1:54740] Du ..r 
+0020  66 75 6c 0a                                       ful.
+    Data: 5b2f303a303a303a303a303a303a303a313a35343734305d...
+    [Length: 36]
+
+No.     Time           Source                Destination           Protocol Length Info
+     19 14.071980000   127.0.0.1             127.0.0.1             TCP      66     54411 > dtspcd [ACK] Seq=5 Ack=58 Win=43776 Len=0 TSval=10051665 TSecr=10051665
+
+Frame 19: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1 (127.0.0.1), Dst: 127.0.0.1 (127.0.0.1)
+Transmission Control Protocol, Src Port: 54411 (54411), Dst Port: dtspcd (6112), Seq: 5, Ack: 58, Len: 0
