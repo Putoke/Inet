@@ -72,7 +72,7 @@ public class Server {
                 id_counter++;
                 current_id = id_counter;
                 map.put(current_id, new Random().nextInt(100)+1);
-
+                map2.put(current_id, new Tuple(-1,101));
             }
 
             if(current_guess == -1337) {
@@ -102,6 +102,7 @@ public class Server {
             while( infil.available() > 0 ){
                 response.write(b, 0, infil.read(b));
             }
+
             if(current_guess != -1) {
                 response.write("<br>".getBytes());
                 int low = map2.get(current_id).x, high = map2.get(current_id).y;
