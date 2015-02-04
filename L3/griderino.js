@@ -2,9 +2,28 @@
  * Created by Fredrik on 2/4/2015.
  */
 
+var chips = new Array(10);
+for (var i = 0; i < 10; i++) {
+    chips[i] = new Array(10);
+}
+
+for(var i=0; i<10; i++) {
+    var x = Math.floor((Math.random() * 9) + 1);
+    var y = Math.floor((Math.random() * 9) + 1);
+
+    chips[x][y] = true;
+}
+
 function clickedDaButton(e) {
-    e.style.color = "blue";
-    e.style.background = "red";
+    var x = e.value.charAt(0);
+    var y = e.value.charAt(2);
+    if(chips[x][y]){
+        e.style.color = "yellow";
+        e.style.background = "green";
+    } else {
+        e.style.color = "blue";
+        e.style.background = "red";
+    }
     document.getElementsByName("pressed")[0].value = e.value;
 }
 
