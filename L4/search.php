@@ -1,3 +1,4 @@
+
 <?php
 
 $mysqli = new mysqli("mysql-vt2015.csc.kth.se", "frebernuser", "itn6Fy9E", "frebern");
@@ -7,6 +8,14 @@ if ($mysqli->connect_errno) {
 
 $area = $mysqli->query("SELECT DISTINCT lan FROM bostader");
 $type = $mysqli->query("SELECT DISTINCT objekttyp FROM bostader");
+
+$cookieValues = explode(":", $_COOKIE["values"]);
+
+$lan = utf8_decode($cookieValues[0]);
+$typ = utf8_decode($cookieValues[1]);
+$adress = utf8_decode($cookieValues[2]);
+$sort = $cookieValues[3];
+$asc = $cookieValues[4];
 
 ?>
 
@@ -40,6 +49,8 @@ $type = $mysqli->query("SELECT DISTINCT objekttyp FROM bostader");
 
 
 	        var query = "result.php?lan="+lan+"&typ="+typ+"&adress=" + str + "&sort=" + sort + "&asc=" + asc;
+			var cookie = "values="+lan+":"+typ+":"+str+":"+sort+":"+asc;
+			document.cookie = cookie;
 	        xmlhttp.open("GET", query, true);
 	        xmlhttp.send();
 	    }
@@ -57,7 +68,10 @@ $type = $mysqli->query("SELECT DISTINCT objekttyp FROM bostader");
 		for ($row_no = 0; $row_no < $area->num_rows; $row_no++) {
 			$area->data_seek($row_no);
 			$row = $area->fetch_assoc();
-			echo "<option value='" . $row['lan'] . "'>" . $row['lan'] . "</option>";
+			if($row['lan'] == $lan)
+				echo "<option value='" . $row['lan'] . "' selected>" . $row['lan'] . "</option>";
+			else
+				echo "<option value='" . $row['lan'] . "'>" . $row['lan'] . "</option>";
 		}
 		 ?> </select>
 
@@ -65,12 +79,14 @@ $type = $mysqli->query("SELECT DISTINCT objekttyp FROM bostader");
 		for ($row_no = 0; $row_no < $type->num_rows; $row_no++) {
 			$type->data_seek($row_no);
 			$row = $type->fetch_assoc();
-			echo "<option value='" . $row['objekttyp'] . "'>" . $row['objekttyp'] . "</option>";
+			if($row['objekttyp'] === $typ)
+				echo "<option value='" . $row['objekttyp'] . " ' selected>" . $row['objekttyp'] . "</option>";
+			else
+				echo "<option value='" . $row['objekttyp'] . "'>" . $row['objekttyp'] . "</option>";
 		}
 		 ?> </select>
 
-		 Adress: <input onkeyup="showTable()" type="text" name="adress">
-
+		 Adress: <input onkeyup="showTable()" type="text" name="adress" value="<?php echo $adress ?>">
 		 <input type="hidden" name="sort" value="pris">
 		 <input type="hidden" name="asc" value="true">
 
