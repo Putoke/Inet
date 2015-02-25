@@ -2,7 +2,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.StringTokenizer;
 
@@ -11,7 +10,6 @@ import java.util.StringTokenizer;
  */
 public class Client {
 
-    private String clientId;
     public float averageGuess;
 
     public  Client() {
@@ -54,8 +52,6 @@ public class Client {
         String cookie = con.getHeaderField(3);
         StringTokenizer st = new StringTokenizer(cookie, ";");
         cookie = st.nextToken();
-        clientId = cookie.replace("clientId=", "");
-        int id = Integer.parseInt(clientId);
 
         // GUESSINGK
 

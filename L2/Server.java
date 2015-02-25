@@ -1,4 +1,3 @@
-import java.io.*;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -125,7 +124,8 @@ public class Server {
                         response.write(("Too low, guess a number between " + t.x + " and " + t.y).getBytes());
                 }
             }
-
+            
+            infil.close();
             s.shutdownOutput();
             s.close();
         }

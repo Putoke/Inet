@@ -1,4 +1,3 @@
-import java.io.*;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -12,7 +11,8 @@ import java.util.StringTokenizer;
 public class NewServer{
     public  static void main(String[] args) throws java.io.IOException{
         System.out.println("Skapar Serversocket");
-        ServerSocket ss = new ServerSocket(8080);
+        @SuppressWarnings("resource")
+		ServerSocket ss = new ServerSocket(8080);
         while(true) {
             System.out.println("Väntar på klient...");
             Socket s = ss.accept();
@@ -47,6 +47,7 @@ public class NewServer{
             }
             s.shutdownOutput();
             s.close();
+            infil.close();
         }
     }
 }
