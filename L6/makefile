@@ -4,6 +4,6 @@ compile:
 	javac *.java
 
 run:
-	java Server
+	java Main
 
 
