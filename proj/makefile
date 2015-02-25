@@ -9,3 +9,5 @@ start:
 	sh tomcat/bin/startup.sh
 stop:
 	sh tomcat/bin/shutdown.sh
+resetDatabase:
+	mysql --host=mysql-vt2015.csc.kth.se --user=jedluadmin --password=mel4Q8mc < database/createtables.sql
